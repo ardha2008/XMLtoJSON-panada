@@ -13,10 +13,6 @@ use Resources;
 
 class XmlJson{
     
-    function __construct(){
-    	
-    }
-
     function getxml($content) {
         $result = file_get_contents($content);
         $result = str_replace(array("\n", "\r", "\t"), '', $result);
